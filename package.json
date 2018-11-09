@@ -1,0 +1,40 @@
+{
+  "name": "mkdeck",
+  "version": "1.0.0",
+  "title": "MKDeck Demo",
+  "description": "MDX port of the Meerkats Keynote deck",
+  "main": "index.js",
+  "scripts": {
+    "start": "mdx-deck deck.mdx",
+    "prebuild": "rimraf ./dist",
+    "build": "mdx-deck build deck.mdx",
+    "postbuild": "cpx \"assets/**/*\" \"dist/assets\"; npm run pdf; npm run screenshot",
+    "pdf": "mdx-deck pdf deck.mdx",
+    "screenshot": "mdx-deck screenshot deck.mdx",
+    "prepublish": "npm run build",
+    "publish": "now dist -n mkdeck",
+    "postpublish": "now alias"
+  },
+  "author": "John Lombardo <john@programbo.com>",
+  "license": "MIT",
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "mdx-deck": "^1.7.7",
+    "mem": "^4.0.0",
+    "raw-loader": "^0.5.1",
+    "styled-components": "^4.0.3",
+    "superbox": "^2.1.0"
+  },
+  "devDependencies": {
+    "@types/classnames": "^2.2.6",
+    "@types/mem": "^1.1.2",
+    "@types/node": "^10.12.3",
+    "@types/react": "^16.4.18",
+    "@types/react-dom": "^16.0.9",
+    "@types/styled-components": "^4.0.3",
+    "cpx": "^1.5.0",
+    "rimraf": "^2.6.2",
+    "ts-loader": "^5.3.0",
+    "typescript": "^3.1.6"
+  }
+}
