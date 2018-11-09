@@ -1,9 +1,13 @@
-import React from 'react'
-import { Head } from 'mdx-deck'
-import { alias } from '../now.json'
-import { title, name, version, description } from '../package.json'
+import * as React from "react";
+import { Head } from "mdx-deck";
+const { alias } = require("../now.json");
+const { title, name, version, description } = require("../package.json");
 
-export const Provider = ({ children }) => {
+interface IProvider {
+  children: Element | Element[];
+}
+
+export const Provider: React.SFC<IProvider> = ({ children }) => {
   return (
     <div>
       <Head>
@@ -16,5 +20,5 @@ export const Provider = ({ children }) => {
       <link rel="stylesheet" href="../assets/fonts/euclid.css" />
       {children}
     </div>
-  )
-}
+  );
+};
