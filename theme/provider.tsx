@@ -16,6 +16,12 @@ export const Provider: React.SFC<IProvider> = ({ children }) => {
         <meta property="og:title" content={`${title || name} (v${version})`} />
         <meta property="og:description" content={description} />
         <meta property="og:type" content="website" />
+        <link
+          rel="icon"
+          type="image/png"
+          href="https://meerkats.com.au/static/favicons/favicon-196x196.png"
+          sizes="196x196"
+        />
       </Head>
       <link rel="stylesheet" href="../assets/fonts/euclid.css" />
       {children}
