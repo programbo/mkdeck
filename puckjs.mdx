@@ -1,0 +1,251 @@
+import { Code, Appear, Image } from 'mdx-deck'
+import * as template from './templates'
+import { Footer } from './components/Footer.tsx'
+import { CodeSurfer } from 'mdx-deck-code-surfer'
+const secondaryImageLeft = template.secondaryImageLeft()
+const code = template.huge({
+  backgroundColor: 'black',
+})
+
+export theme from './theme'
+
+export default template.coverPage({ backgroundColor: 'black' })
+
+# Meerkats Digital
+
+## Touching the material world with Puck.js
+
+### 12 Nov 2018
+
+---
+
+export default template.secondaryImageRight({
+  image: './assets/placeholder.png',
+})
+
+# Scope
+
+## _In this session will will cover..._
+
+- What is Puck.js
+- On-board features
+- Expanded features
+- Alternative devices
+
+---
+
+export default template.secondaryImageLeft({
+  image: './assets/placeholder.png',
+})
+
+# Purpose
+
+## _The reason we are learning this..._
+
+- Another tool in the creative meerkat toolkit
+- Affordability
+- In-house development skills
+
+---
+
+export default template.secondaryImageRight({
+  image: './assets/placeholder.png',
+})
+
+# Take-aways
+
+## _At the end of this session..._
+
+- Detect and react to events in the physical world
+- Web Bluetooth is a thing
+- The thing about Bluetooth beacons...
+
+---
+
+export default secondaryImageLeft
+
+# What is Puck.js?
+
+<Image src="./assets/placeholder.png" />
+<ul>
+  <li>A computer</li>
+<Appear>
+  <li>A Human Interface Device (HID)</li>
+  <li>A bluetooth beacon (and beacon receiver!)</li>
+</Appear>
+</ul>
+
+---
+
+export default template.secondaryImageRight({
+  image: './assets/placeholder.png',
+})
+
+# On-board features
+
+- LEDs
+- Button
+- Magnetometer
+- Infrared (IR)
+- Near Field Computing
+- Light sensor
+- Temperature
+- Bluetooth
+
+---
+
+export default template.huge()
+
+# LEDs
+
+## LED1, LED2, LED3
+
+```js
+LED1.write(1)
+```
+
+---
+
+export default code
+
+# Button
+
+## BTN
+
+```js
+setWatch(
+  function() {
+    console.log('Pressed')
+  },
+  BTN,
+  { edge: 'rising', debounce: 50, repeat: true },
+)
+
+setWatch(
+  function() {
+    console.log('Released')
+  },
+  BTN,
+  { edge: 'falling', debounce: 50, repeat: true },
+)
+```
+
+---
+
+export default code
+
+# Button
+
+## BTN
+
+```js
+setWatch(
+  function() {
+    console.log('Pressed')
+  },
+  BTN,
+  { edge: 'rising', debounce: 50, repeat: true },
+)
+
+setWatch(
+  function() {
+    console.log('Released')
+  },
+  BTN,
+  { edge: 'falling', debounce: 50, repeat: true },
+)
+```
+
+---
+
+export default template.huge()
+
+# Magnetometer
+
+```js
+code
+```
+
+---
+
+export default template.huge()
+
+# Infrared (IR)
+
+```js
+code
+```
+
+---
+
+export default template.huge()
+
+# Near Field Computing
+
+```js
+code
+```
+
+---
+
+export default template.huge()
+
+# Light sensor
+
+```js
+code
+```
+
+---
+
+export default template.huge()
+
+# Temperature
+
+```js
+code
+```
+
+---
+
+export default template.huge()
+
+# Bluetooth
+
+```js
+code
+```
+
+---
+
+export default template.secondaryImageLeft({
+  image: './assets/placeholder.png',
+})
+
+# Expanded features
+
+- GPIO pins
+- Capacitive sense
+- I2C, SPI, and Serial
+
+---
+
+export default template.secondaryImageRight({
+  image: './assets/placeholder.png',
+})
+
+# Alternative devices
+
+- Espruino (ESP8266, ESP32)
+- Arduino
+- Raspberry Pi
+
+---
+
+export default template.coverPage({ backgroundColor: 'tint', theme: 'warm' })
+
+# Meerkats Digital
+
+## Up next: Who wants to be a front-end designer?
+
+### TBA

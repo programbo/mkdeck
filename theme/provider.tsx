@@ -22,6 +22,7 @@ export const Provider: React.SFC<IProvider> = ({ children }) => {
           href="https://meerkats.com.au/static/favicons/favicon-196x196.png"
           sizes="196x196"
         />
+        <script src="https://www.puck-js.com/puck.js" />
       </Head>
       <link rel="stylesheet" href="../assets/fonts/euclid.css" />
       {children}

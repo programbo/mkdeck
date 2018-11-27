@@ -14,7 +14,7 @@ const HalfRoot = styled(Root)`
 
 const Box = styled(BaseBox)`
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
   width: 50%;
   padding: 0 5.4vw 0 0;
   text-align: left;

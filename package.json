@@ -1,8 +1,8 @@
 {
   "name": "mkdeck",
   "version": "1.0.0",
-  "title": "MKDeck Demo",
-  "description": "MDX port of the Meerkats Keynote deck",
+  "title": "Touching the material world with Puck.js",
+  "description": "Overview of Puck.js capabilities for creative meerkats",
   "main": "index.js",
   "scripts": {
     "start": "mdx-deck deck.mdx",
@@ -20,8 +20,10 @@
   "dependencies": {
     "classnames": "^2.2.6",
     "mdx-deck": "^1.7.7",
+    "mdx-deck-code-surfer": "^0.5.3",
     "mem": "^4.0.0",
     "raw-loader": "^0.5.1",
+    "react-syntax-highlighter": "^10.0.1",
     "styled-components": "^4.0.3",
     "superbox": "^2.1.0"
   },

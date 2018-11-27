@@ -23,3 +23,7 @@ export default (props: ISlide) => ({ children }: ITemplate) => {
     </Root>
   );
 };
+
+// export default ({ children }: any) => {
+//   return <div>{children}</div>;
+// };
